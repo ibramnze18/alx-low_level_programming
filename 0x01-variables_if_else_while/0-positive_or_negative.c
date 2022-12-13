@@ -3,7 +3,9 @@
 #include <time.h>
 
 /**
- *Return: Always 0
+ * main - Entry point
+ * Description: 'prints if number is positive, negative or zero'
+ * Return: Always 0 (Success)
  */
 
 int main(void)
