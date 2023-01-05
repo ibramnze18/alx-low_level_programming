@@ -2,7 +2,7 @@
 
 /**
  * _print_rev_recursion - Prints strings in reverse order
- * @s: The string to reverse
+ * @s: string
  * Return: On success 1
  * On error, -1 is returned, and errno is set appropriately.
  */
