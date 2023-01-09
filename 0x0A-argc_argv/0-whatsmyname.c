@@ -8,7 +8,7 @@
  * Return: Always 0 On Success
  */
 
-int main(argc__attribute__((unused)), argv[])
+int main(int argc__attribute__((unused)), char *argv[])
 {
 	_putchar("%s\n", argv[0]);
 }
