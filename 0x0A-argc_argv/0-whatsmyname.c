@@ -11,6 +11,6 @@
 int main(int argc__attribute__((unused)), char *argv[])
 {
 	printf("%s\n", *argv);
-i
+
 	return (0);
 }
