@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
+ * _isalpha - Function to check if character is upper or lower
+ *@c: character to check
  * Return: Always 0 (Success)
  */
 
