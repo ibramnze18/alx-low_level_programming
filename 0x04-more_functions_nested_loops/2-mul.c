@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * mul - Function that multiply two numbers
  * @a: First operand
  * @b: Second operand
