@@ -2,26 +2,25 @@
 #include <stdio.h>
 
 /**
- * error_file - Function that checks that files can open
- * @file_from: Source file
- * @file_to: Destination file.
- * @argv: Array of arguments
+ * create_buffer - Function that checks that files can open
+ * @file: Source file
  * Return: Always 0.
  */
-void error_file(int file_from, int file_to, char *argv[])
+char *create_buffer(char *file)
 {
-	if (file_from == -1)
+	char *buf;
+
+	buf = malloc(sizeof(char) * 1024);
+
+	if (buf == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-	if (file_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO,
+			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
-}
 
+	return (buf);
+}
 /**
  * main - check the code for Holberton School students.
  * @argc: Argument count
